@@ -1,5 +1,5 @@
 ## RRTstar-LTL in C 
-Implementation of a sampling-based LTL motion planning algorithm that incrementally builds trees that explore the continuous product state-space. Both probabilistically complete and asymptotically optimal. 
+Implementation of a sampling-based LTL path planning algorithm that incrementally builds trees that explore the continuous product state-space. Both probabilistically complete and asymptotically optimal. 
 
 ## Instructions: 
 1. Clone this repository and copy all code
