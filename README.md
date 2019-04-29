@@ -1,7 +1,7 @@
-## LTL-RRT* IMPLEMENTATION IN C
+## LTL-RRT* Implementation C
 Savini Prematilleke
 
-## 1. OBTAIN INPUTS -------------------------------------------------------------------------
+# 1. OBTAIN INPUTS 
 <NBA text file> 
 text file that contains the buchi automata generated from the input LTL formula
 - use the LTL2BA software at http://www.lsv.fr/~gastin/ltl2ba/
@@ -53,13 +53,13 @@ integer specifying maximum number of iterations for prefix run
 <# of suffix runs>
 integer specifying maximum number of iterations for suffix run
 
-## 2. COMPILE ------------------------------------------------------------------------------
+# 2. COMPILE
 download repository 
 
 compile program
 > make
 
-## 3. EXECUTING ----------------------------------------------------------------------------
+# 3. EXECUTING 
 run the program
 > ./main <NBA text file> <environment text file> <# of robots> <# of goal regions> <goal 
   size> <# of obstacles> <obstacle size> <# of prefix runs> <# of suffix runs>
@@ -70,5 +70,5 @@ run the program
 to visualize the least-cost prefix and suffix paths
 - currently this program will only plot for the environment specified in "environ.txt"
 
-## REFERENCES: 
+# REFERENCES 
 Based on the work of user XushengLuo
