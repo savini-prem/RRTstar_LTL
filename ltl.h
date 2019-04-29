@@ -28,11 +28,12 @@ void addToIArray(iarray_t* result, int element);
 void label(BA_t * B,carray_t *s, carray_t *a, char * filename, int aps);
 
 int getStateIndex(carray_t * s, char* token);
-void getAlphabetIndex(carray_t* a, iarray_t* APS, iarray_t* trans);
+void fillTrans(carray_t* a, iarray_t* APS, iarray_t* APSnot, iarray_t* trans);
 
 iarray_t* containsAPs(char* token, int numAPs);
+iarray_t* containsAPsNOT(char* token, int numAPs);
 
-int whichAPIsTrue(carray_t* a, int numAPs, float loc[], float goal[][5][2], int num_goals, int goal_size);
+int whichAPIsTrue(carray_t* a, int numAPs, vertex_t* new_steer, float*** goal, int num_goals, int goal_size);
 
 iarray_t* nextBState(int current_state, int alpha_index, BA_t* B);
 int isConnectionValid(int near_arri_bstate, iarray_t* new_next_states);
@@ -50,7 +51,7 @@ carray_t* readStates(char* filename);
 
 // old alpha: 
 char* dec2bin(int x, int len);
-carray_t* createAlpha(int len);
+carray_t* createAlpha(int numAPs, int num_robs, int num_regions); 
 void printAlpha(carray_t* alpha);
 
 #endif
