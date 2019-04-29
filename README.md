@@ -64,13 +64,13 @@ make
 ~~~~
 ./main <NBA text file> <environment text file> <# of robots> <# of goal regions> <goal size> <# of obstacles> <obstacle size> <# of prefix runs> <# of suffix runs>
 ~~~~
-    to output all feasible and least-cost prefix and suffix paths, and corresponding run times
+to output all feasible and least-cost prefix and suffix paths, and corresponding run times
 
 -    run the program
 ~~~~
 python plotPath.py
 ~~~~
-    to visualize the least-cost prefix and suffix paths
+to visualize the least-cost prefix and suffix paths
     -    currently this program will only plot for the environment specified in "environ.txt"
 
 ## REFERENCES 
