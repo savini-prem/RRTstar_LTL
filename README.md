@@ -4,8 +4,8 @@ Savini Prematilleke
 ## 1. OBTAIN INPUTS 
 <NBA text file>  
 text file that contains the buchi automata generated from the input LTL formula<br/>
-   * use the LTL2BA software at http://www.lsv.fr/~gastin/ltl2ba/ <br/>  
-   * input an LTL formula where every atomic propoisition is labelled as follows:<br/>  
+- use the LTL2BA software at http://www.lsv.fr/~gastin/ltl2ba/ <br/>  
+- input an LTL formula where every atomic propoisition is labelled as follows:<br/>  
   for example with 2 robots and 3 goal regions, there are 6 atomic propositions <br/> 
   p1: robot1 in region1  <br/>
   p2: robot1 in region2   <br/>
@@ -13,9 +13,9 @@ text file that contains the buchi automata generated from the input LTL formula<
   p4: robot2 in region1  <br/>
   p5: robot2 in region2  <br/>
   p6: robot2 in region3  <br/>
-   * make sure the "use verbose mode" box is checked before clicking convert  <br/>
-   * copy and paste the "Buchi automaton after simplification" output into a text file <br/> 
-   * see "NBA.txt" which is a sample text file for the LTL formula:  <br/>
+- make sure the "use verbose mode" box is checked before clicking convert  <br/>
+- copy and paste the "Buchi automaton after simplification" output into a text file <br/> 
+- see "NBA.txt" which is a sample text file for the LTL formula:  <br/>
   "F(p4)&&GF(p3&&(Fp1))&&(!p1Up2)&&F(!p5)"  <br/>
 
 <environment text file>   <br/>
