@@ -1,14 +1,14 @@
-## LTL-RRT* Implementation C
+# LTL-RRT* Implementation C
 Savini Prematilleke
 
-# 1. OBTAIN INPUTS 
-<NBA text file> 
-text file that contains the buchi automata generated from the input LTL formula
-- use the LTL2BA software at http://www.lsv.fr/~gastin/ltl2ba/
-- input an LTL formula where every atomic propoisition is labelled as follows:
-  for example with 2 robots and 3 goal regions, there are 6 atomic propositions
-  p1: robot1 in region1
-  p2: robot1 in region2 
+## 1. OBTAIN INPUTS 
+..*<NBA text file> 
+..*text file that contains the buchi automata generated from the input LTL formula
+..*- use the LTL2BA software at http://www.lsv.fr/~gastin/ltl2ba/
+..*- input an LTL formula where every atomic propoisition is labelled as follows:
+  ..*for example with 2 robots and 3 goal regions, there are 6 atomic propositions
+  ..*p1: robot1 in region1
+  ..*p2: robot1 in region2 
   p3: robot1 in region3
   p4: robot2 in region1
   p5: robot2 in region2
@@ -53,22 +53,24 @@ integer specifying maximum number of iterations for prefix run
 <# of suffix runs>
 integer specifying maximum number of iterations for suffix run
 
-# 2. COMPILE
+## 2. COMPILE
 download repository 
 
 compile program
-> make
+'''python
+make'''
 
-# 3. EXECUTING 
+## 3. EXECUTING 
 run the program
-> ./main <NBA text file> <environment text file> <# of robots> <# of goal regions> <goal 
-  size> <# of obstacles> <obstacle size> <# of prefix runs> <# of suffix runs>
+'''python
+./main <NBA text file> <environment text file> <# of robots> <# of goal regions> <goal size> <# of obstacles> <obstacle size> <# of prefix runs> <# of suffix runs>''' 
 to output all feasible and least-cost prefix and suffix paths, and corresponding run times
 
 run the program
-> python plotPath.py 
+'''python
+python plotPath.py''' 
 to visualize the least-cost prefix and suffix paths
 - currently this program will only plot for the environment specified in "environ.txt"
 
-# REFERENCES 
+## REFERENCES 
 Based on the work of user XushengLuo
