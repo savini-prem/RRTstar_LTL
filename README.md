@@ -5,7 +5,7 @@ Savini Prematilleke
 **NBA text file**<br/>
 text file that contains the buchi automata generated from the input LTL formula  <br/>
 -    use the LTL2BA software at http://www.lsv.fr/~gastin/ltl2ba/ <br/>  
--    input an LTL formula where every atomic propoisition is labelled as follows: 
+-    input an LTL formula where every atomic propoisition is labelled as follows: <br/>
     for example with 2 robots and 3 goal regions, there are 6 atomic propositions <br/> 
     p1: robot1 in region1  <br/>
     p2: robot1 in region2   <br/>
@@ -16,7 +16,7 @@ text file that contains the buchi automata generated from the input LTL formula 
 -    make sure the "use verbose mode" box is checked before clicking convert  <br/>
 -    copy and paste the "Buchi automaton after simplification" output into a text file <br/> 
 -    see "NBA.txt" which is a sample text file for the LTL formula:  <br/>
-    "F(p4)&&GF(p3&&(Fp1))&&(!p1Up2)&&F(!p5)"  <br/>
+    F(p4)&&GF(p3&&(Fp1))&&(!p1Up2)&&F(!p5)  <br/>
 
 **environment text file**   <br/>
 text file that dictates the location and shape of obstacles, goal regions, and the bounds of the environment  <br/>
@@ -53,26 +53,25 @@ integer specifying maximum number of iterations for prefix run
 integer specifying maximum number of iterations for suffix run  
 
 ## 2. COMPILE
-download repository  
-
-compile program
+-    download repository  
+-    compile program
 ~~~~
 make
 ~~~~
 
 ## 3. EXECUTING 
-run the program
+-    run the program
 ~~~~
 ./main <NBA text file> <environment text file> <# of robots> <# of goal regions> <goal size> <# of obstacles> <obstacle size> <# of prefix runs> <# of suffix runs>
 ~~~~
-to output all feasible and least-cost prefix and suffix paths, and corresponding run times
+    to output all feasible and least-cost prefix and suffix paths, and corresponding run times
 
-run the program
+-    run the program
 ~~~~
 python plotPath.py
 ~~~~
-to visualize the least-cost prefix and suffix paths
-- currently this program will only plot for the environment specified in "environ.txt"
+    to visualize the least-cost prefix and suffix paths
+    -    currently this program will only plot for the environment specified in "environ.txt"
 
 ## REFERENCES 
 Based on the work of user XushengLuo
