@@ -69,7 +69,7 @@ make
 ~~~~
 python plotPath.py
 ~~~~
-*currently 'plotPath.py' will only plot for the environment specified in "environ.txt"*
+*currently "plotPath.py" will only plot for the environment specified in "environ.txt"*
 
 ## REFERENCES 
 Based on the work of user XushengLuo
